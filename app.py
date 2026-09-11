@@ -89,7 +89,7 @@ def home():
         image_array = np.array(image, dtype=np.float32) / 255.0
         image_array = np.expand_dims(image_array, axis=0)
 
-        probability = model.predict(image_array, verbose=0)[0][0]
+        probability = float(model(image_array, training=False).numpy()[0][0])
 
         if probability >= 0.5:
             prediction = "Dog 🐶"
