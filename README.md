@@ -90,7 +90,7 @@ Cats-vs-Dogs-Classification/
 ├── requirements.txt
 ├── README.md
 └── summary.md
-````
+```
 
 ## ⚙️ How to Run
 
